@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    display: flex;
+}
+
+body {
+    background-color: rgb(204, 200, 200);
+
+}
+header {
+    padding: 20px;
+    background-color: rgb(3, 33, 51);
+}
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+h1 {
+    display: flex;
+    /* this one not working */
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(53, 154, 212);
+    display: inline-block;
+    color: white;
+    
+}
+
+li {
+    list-style: none;
+}
+/* not updating on website fix this */
+.header-nav-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/* just for now am writing all these out instead of making it simple */
+.calc-img {
+    max-height: 200px;
+}
+.chess-img {
+    max-height: 200px;
+}
+.gigachad-img {
+    max-height: 200px;
+}
+@media screen and (max-width: 992px) {
+
+header {
+    background-color: rgb(53, 154, 212);
+}
+h1 {
+    background-color: rgb(3, 33, 51);
+}
+}
+
+@media screen and (max-width 390px) {
+
+}
