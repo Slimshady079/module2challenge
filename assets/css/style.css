@@ -15,10 +15,7 @@ header {
     padding: 20px;
     background-color: rgb(3, 33, 51);
 }
-.header-nav {
-    display: flex;
-    justify-content: flex-end;
-}
+
 h1 {
     display: flex;
     /* this one not working */
@@ -31,8 +28,9 @@ h1 {
     
 }
 
-li {
-    list-style: none;
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
 }
 /* not updating on website fix this */
 .header-nav-list {
