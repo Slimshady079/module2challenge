@@ -24,8 +24,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(53, 154, 212);
     display: inline-block;
-    color: white;
+    color: var(--light);
     
+}
+:root {
+    --dark: rgb(3, 33, 51);
+    --light: #fff;
+    --medium: rgb(53, 154, 212);
 }
 
 .header-nav {
@@ -55,9 +60,14 @@ h1 {
 @media screen and (max-width: 992px) {
 
 header {
-    background-color: rgb(53, 154, 212);
+    background-color: var(--medium)
 }
 h1 {
-    background-color: rgb(3, 33, 51);
+    background-color: var(--dark)
 }
+}
+.headers {
+    background-color: var(--dark);
+    color: var(--light);
+    
 }
