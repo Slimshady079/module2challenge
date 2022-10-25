@@ -3,13 +3,18 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    --dark: rgb(3, 33, 51);
+    --light: #fff;
+    --medium: rgb(53, 154, 212);
+}
+
 nav {
     display: flex;
 }
 
 body {
     background-color: rgb(204, 200, 200);
-
 }
 header {
     padding: 20px;
@@ -25,12 +30,7 @@ h1 {
     background-color: rgb(53, 154, 212);
     display: inline-block;
     color: var(--light);
-    
-}
-:root {
-    --dark: rgb(3, 33, 51);
-    --light: #fff;
-    --medium: rgb(53, 154, 212);
+    margin-top: 10px;
 }
 
 .header-nav {
@@ -47,27 +47,55 @@ h1 {
     justify-content: space-between;
     align-content: space-between;
 }
+/* doesn't work */
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
 /* just for now am writing all these out instead of making it simple */
 .calc-img {
     max-height: 200px;
+    margin: 20px;
 }
+.calc-img:hover {
+    filter: brightness(150%);
+    cursor: grab;
+}
+/* i want the images to also act as links so eventually 
+when you click on them they will take you to that link */
 .chess-img {
     max-height: 200px;
+    margin: 20px;
 }
+
+.chess-img:hover {
+    filter: brightness(150%);
+    cursor: grab;
+}
+
 .gigachad-img {
     max-height: 200px;
+    margin: 20px;
 }
-@media screen and (max-width: 992px) {
 
-header {
-    background-color: var(--medium)
-}
-h1 {
-    background-color: var(--dark)
-}
-}
 .headers {
     background-color: var(--dark);
     color: var(--light);
-    
+    margin: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    header {
+        background-color: var(--medium)
+    }
+
+    h1 {
+        background-color: var(--dark)
+    }
 }
