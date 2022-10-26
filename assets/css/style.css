@@ -19,6 +19,13 @@ body {
 header {
     padding: 20px;
     background-color: rgb(3, 33, 51);
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 15px;
+    list-style: none;
 }
 
 h1 {
@@ -53,25 +60,10 @@ h1 {
     flex-direction: column;
 }
 /* just for now am writing all these out instead of making it simple */
-.calc-img {
-    max-height: 200px;
-    margin: 20px;
-}
-.calc-img:hover {
-    filter: brightness(150%);
-    cursor: grab;
-}
+
+
 /* i want the images to also act as links so eventually 
 when you click on them they will take you to that link */
-.chess-img {
-    max-height: 200px;
-    margin: 20px;
-}
-
-.chess-img:hover {
-    filter: brightness(150%);
-    cursor: grab;
-}
 
 .gigachad-img {
     max-height: 200px;
@@ -84,8 +76,18 @@ when you click on them they will take you to that link */
     margin: 10px;
 }
 
+.work-imgs {
+    max-height: 200px;
+    margin: 20px;
+}
 
-
+.work-imgs:hover {
+    filter: brightness(150%);
+    cursor: grab;
+}
+.footer-list {
+    margin-left: 15px;
+}
 
 
 
