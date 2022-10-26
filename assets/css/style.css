@@ -8,24 +8,15 @@
     --light: #fff;
     --medium: rgb(53, 154, 212);
 }
-
-nav {
-    display: flex;
-}
-
 body {
     background-color: rgb(204, 200, 200);
 }
+
 header {
     padding: 20px;
     background-color: rgb(3, 33, 51);
     display: flex;
     justify-content: space-between;
-}
-
-li {
-    margin: 15px;
-    list-style: none;
 }
 
 h1 {
@@ -38,6 +29,10 @@ h1 {
     display: inline-block;
     color: var(--light);
     margin-top: 10px;
+}
+
+nav {
+    display: flex;
 }
 
 .header-nav {
@@ -59,9 +54,6 @@ h1 {
     display: flex;
     flex-direction: column;
 }
-/* just for now am writing all these out instead of making it simple */
-
-
 /* i want the images to also act as links so eventually 
 when you click on them they will take you to that link */
 
@@ -85,6 +77,12 @@ when you click on them they will take you to that link */
     filter: brightness(150%);
     cursor: grab;
 }
+
+li {
+    margin: 15px;
+    list-style: none;
+}
+
 .footer-list {
     margin-left: 15px;
 }
