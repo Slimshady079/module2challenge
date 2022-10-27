@@ -1,22 +1,35 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-:root {
-    --dark: rgb(3, 33, 51);
-    --light: #fff;
-    --medium: rgb(53, 154, 212);
-}
-body {
-    background-color: rgb(204, 200, 200);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 header {
+    display: flex;
     padding: 20px;
     background-color: rgb(3, 33, 51);
-    display: flex;
     justify-content: space-between;
+}
+
+:root {
+    --dark: rgb(3, 33, 51);
+    --light: #fff;
+    /* --medium: rgb(53, 154, 212); */
+}
+
+body {
+    background-color: rgb(204, 200, 200);
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 h1 {
@@ -25,20 +38,27 @@ h1 {
     align-items: center;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(53, 154, 212);
+    /* background-color: rgb(53, 154, 212); */
     display: inline-block;
     color: var(--light);
     margin-top: 10px;
 }
 
-nav {
+.card {
     display: flex;
+    flex-direction: column;
 }
 
 .header-nav {
     display: flex;
     justify-content: flex-end;
 }
+
+.header-nav-list a {
+    color: var(--light);
+    text-decoration: none;
+}
+
 /* not updating on website fix this */
 .header-nav-list {
     display: flex;
@@ -49,33 +69,63 @@ nav {
     justify-content: space-between;
     align-content: space-between;
 }
+
 /* doesn't work */
 .about-me {
-    display: flex;
-    flex-direction: column;
+    font-size: 115%;
 }
+
 /* i want the images to also act as links so eventually 
 when you click on them they will take you to that link */
 
 .gigachad-img {
-    max-height: 200px;
+    max-width: 200px;
     margin: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
 }
 
 .headers {
-    background-color: var(--dark);
-    color: var(--light);
-    margin: 10px;
+    color: var(--dark);
+    width: 200px;
+    border-right-color: var(--dark);
+    border-right-width: 5px;
+    border-style: solid;
+    margin-right: 20px;
 }
 
-.work-imgs {
-    max-height: 200px;
-    margin: 20px;
+.small-img {
+    max-width: 245px;
+}
+
+.small-img-inner:first-child {
+    margin-right: 10px;
+}
+
+.big-img {
+    max-width: 500px;
+}
+
+.big-img-group {
+    margin-bottom: 10px;
 }
 
 .work-imgs:hover {
     filter: brightness(150%);
-    cursor: grab;
+}
+
+.small-img-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.small-img-inner {
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -85,6 +135,12 @@ li {
 
 .footer-list {
     margin-left: 15px;
+    font-size: 110%;
+}
+
+.work-fig {
+    position: relative;
+    text-align: center;
 }
 
 
@@ -99,3 +155,6 @@ li {
         background-color: var(--dark)
     }
 }
+
+/* iphone media screen is 399px */
+/* find good colors that go with my theme */
