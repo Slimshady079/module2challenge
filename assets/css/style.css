@@ -27,7 +27,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -57,6 +57,12 @@ h1 {
 .header-nav-list a {
     color: var(--light);
     text-decoration: none;
+    margin-left: 15px;
+}
+
+.header-nav-list a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
 }
 
 /* not updating on website fix this */
@@ -83,19 +89,21 @@ when you click on them they will take you to that link */
     margin: 20px;
 }
 
-aside {
-    flex: 1;
-    padding: 20px;
-}
-
 .headers {
     color: var(--dark);
-    width: 200px;
+    /* min-width: 200px; */
+    flex: 0 0 150px;
     border-right-color: var(--dark);
     border-right-width: 5px;
     border-style: solid;
     margin-right: 20px;
 }
+
+/* h2.headers {
+    display: flex;
+    flex: wrap;
+    max-width: 200px;
+} */
 
 .small-img {
     max-width: 245px;
@@ -128,14 +136,16 @@ aside {
     flex-direction: column;
 }
 
-li {
+/* li {
     margin: 15px;
     list-style: none;
-}
+} */
+
 
 .footer-list {
     margin-left: 15px;
     font-size: 110%;
+    list-style: none;
 }
 
 .work-fig {
